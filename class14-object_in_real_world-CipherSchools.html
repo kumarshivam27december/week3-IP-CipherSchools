@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora hic, similique earum facere quisquam quis corporis pariatur eveniet perspiciatis molestiae voluptatem ipsa? Fuga qui explicabo perspiciatis, eos architecto cumque maiores?
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis sequi qui atque culpa aperiam sunt repellat obcaecati expedita doloribus recusandae, dignissimos error? Deleniti consequatur eveniet maiores, hic atque dolorum corporis!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae eius eum minima, voluptatibus magni ducimus ipsa quos dolor omnis ut voluptatum! Ex unde soluta incidunt impedit sed rerum repudiandae officia?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque culpa est consequuntur, aut molestiae eligendi nemo nesciunt ratione, amet vero modi repudiandae, dolorum quia quis velit cupiditate deleniti non eos!
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati praesentium, aliquam quos neque voluptatibus sed accusantium perferendis debitis adipisci voluptate. Atque est quos quia iusto architecto! Ipsa, vitae. Ullam, magni?
+        
+    </p>
+    <script>
+        // Animal properties and method encapsulation
+const Animal = {
+    type: "Invertebrates", // Default value of properties
+    displayType() {
+      // Method which will display type of Animal
+      console.log(this.type);
+    },
+  };
+  
+  // Create new animal type called animal1
+  const animal1 = Object.create(Animal);
+  animal1.displayType(); // Logs: Invertebrates
+  
+  // Create new animal type called fish
+  const fish = Object.create(Animal);
+  fish.type = "Fishes";
+  fish.displayType(); // Logs: Fishes
+    </script>
+</body>
+</html>
