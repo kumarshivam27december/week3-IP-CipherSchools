@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var el = document.querySelector("#answer-25097808 > div > div.answercell.post-layout--right > div.s-prose.js-post-body > pre"); // change yourId to id of your element, or you can write “body” and it will convert all document
+var els = el.getElementsByTagName("*");
+
+for(var i = -1, l = els.length; ++i < l;){
+    el = els[i]
+    s = getComputedStyle(el)
+    for (let styleKey in el.style) {
+        for (let computedStyleKey in s) {
+            let computedStyleKeyCamelCase = computedStyleKey.replace(/\-([a-z])/g, v => v[1].toUpperCase());
+            if ((typeof el.style[styleKey] != "function") && (styleKey != 'cssText')){
+                if(styleKey == computedStyleKeyCamelCase) {
+                    el.style[styleKey] = s[computedStyleKey];
+                }
+            }
+        }
+    }
+}
+    </script>
+</body>
+</html>
