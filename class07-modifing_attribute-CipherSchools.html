@@ -1,0 +1,41 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Change the attribute value using JavaScript.</h2>
+    <h4>Click the button to change the <i> background-color <i> of the below text.</h4>
+    <div id = "fonts">change color of this.</div>
+    <button onclick = "changeBackground()">change background</button>
+    <script>
+       function changeBackground() {
+          let fontsDiv = document.getElementById("fonts");
+          fontsDiv.style.backgroundColor = 'green'; // change background color of div element using style attribute
+       }
+    </script> 
+</body>
+</html>
+
+
+<html>
+<head>
+</head>
+<body>
+   <h2>set new Attribute to the HTML element using JavaScript.</h2>
+   <h4>Adding the <i> height attribute </i> to the below image and set it to 200px.</h4>
+   <img id = "img" src = "https://www.tutorialspoint.com/python_pillow/images/tutorials_point.jpg" alt="demo">
+   <button onclick = "changeImage()">change Image height</button>
+   <script>
+      function changeImage() {
+         let imgDiv = document.getElementById( "img" );
+         imgDiv.setAttribute( "height", "200px" ); // set height attribute to image div
+      }
+   </script>
+</body>
+</html>
